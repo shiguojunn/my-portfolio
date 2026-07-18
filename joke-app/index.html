@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Joke Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>😂 Joke Generator</h1>
+            <p class="subtitle">Get a random laugh!</p>
+        </header>
+
+        <div class="joke-container">
+            <div class="joke-display" id="jokeDisplay">
+                <p id="jokeText">Click the button to get a joke!</p>
+                <p id="jokeType" class="joke-type"></p>
+            </div>
+
+            <div class="button-group">
+                <button id="getJokeBtn" class="btn btn-primary">Get Random Joke</button>
+                <button id="likeBtn" class="btn btn-secondary">❤️ Like</button>
+            </div>
+        </div>
+
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="jokes">Jokes</button>
+            <button class="tab-btn" data-tab="favorites">Favorites ❤️</button>
+        </div>
+
+        <div id="jokesList" class="tab-content active">
+            <ul class="jokes-list" id="jokesList">
+                <!-- Jokes will be listed here -->
+            </ul>
+        </div>
+
+        <div id="favoritesList" class="tab-content">
+            <ul class="jokes-list" id="favoritesList">
+                <!-- Favorite jokes will be listed here -->
+            </ul>
+            <div class="empty-state" id="favoritesEmpty">
+                <p>No favorite jokes yet. Like some jokes to see them here!</p>
+            </div>
+        </div>
+
+        <button id="clearHistoryBtn" class="btn btn-danger">Clear History</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
