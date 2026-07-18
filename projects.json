@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "title": "电商平台",
+    "category": "web",
+    "description": "一个功能完整的电商平台，支持商品管理、购物车、订单跟踪和支付集成。",
+    "tags": ["React", "Node.js", "MongoDB", "Stripe"],
+    "image": "🛒",
+    "demoUrl": "https://example.com/ecommerce",
+    "githubUrl": "https://github.com/shiguojunn/ecommerce"
+  },
+  {
+    "id": 2,
+    "title": "任务管理应用",
+    "category": "web",
+    "description": "帮助团队协作的任务管理工具，包含实时更新、文件共享和团队交流功能。",
+    "tags": ["Vue.js", "Firebase", "Tailwind"],
+    "image": "✓",
+    "demoUrl": "https://example.com/taskapp",
+    "githubUrl": "https://github.com/shiguojunn/taskapp"
+  },
+  {
+    "id": 3,
+    "title": "天气预报应用",
+    "category": "mobile",
+    "description": "跨平台移动应用，提供实时天气数据、预报和天气警报功能。",
+    "tags": ["React Native", "TypeScript", "OpenWeather API"],
+    "image": "⛅",
+    "demoUrl": "https://example.com/weather",
+    "githubUrl": "https://github.com/shiguojunn/weather-app"
+  },
+  {
+    "id": 4,
+    "title": "社交媒体仪表板",
+    "category": "web",
+    "description": "管理多个社交媒体账户，统计分析、发布调度和内容管理的一体化工具。",
+    "tags": ["React", "Redux", "Python", "PostgreSQL"],
+    "image": "📊",
+    "demoUrl": "https://example.com/social-dashboard",
+    "githubUrl": "https://github.com/shiguojunn/social-dashboard"
+  },
+  {
+    "id": 5,
+    "title": "UI设计系统",
+    "category": "design",
+    "description": "为企业应用设计的完整UI组件库，包含设计指南、代码示例和可访问性标准。",
+    "tags": ["Figma", "Storybook", "CSS", "React"],
+    "image": "🎨",
+    "demoUrl": "https://example.com/design-system",
+    "githubUrl": "https://github.com/shiguojunn/design-system"
+  },
+  {
+    "id": 6,
+    "title": "内容管理系统",
+    "category": "web",
+    "description": "灵活的无头CMS系统，支持多语言、版本控制和自定义工作流。",
+    "tags": ["Next.js", "GraphQL", "Prisma", "PostgreSQL"],
+    "image": "📝",
+    "demoUrl": "https://example.com/cms",
+    "githubUrl": "https://github.com/shiguojunn/cms"
+  },
+  {
+    "id": 7,
+    "title": "数据可视化平台",
+    "category": "web",
+    "description": "交互式数据可视化平台，支持实时数据分析、自定义图表和数据导出。",
+    "tags": ["D3.js", "React", "Apache ECharts", "Node.js"],
+    "image": "📈",
+    "demoUrl": "https://example.com/visualization",
+    "githubUrl": "https://github.com/shiguojunn/data-viz"
+  },
+  {
+    "id": 8,
+    "title": "健身追踪应用",
+    "category": "mobile",
+    "description": "个人健身和健康管理应用，具有工作量跟踪、营养记录和进度分析功能。",
+    "tags": ["Flutter", "Firebase", "Dart"],
+    "image": "💪",
+    "demoUrl": "https://example.com/fitness",
+    "githubUrl": "https://github.com/shiguojunn/fitness-app"
+  }
+]
