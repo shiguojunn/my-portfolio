@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock - Multiple Time Zones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🕐 Digital Clock</h1>
+            <p class="subtitle">View time across multiple time zones</p>
+        </header>
+
+        <div class="clock-controls">
+            <div class="control-group">
+                <label for="timeFormat">Time Format:</label>
+                <select id="timeFormat" class="select">
+                    <option value="24">24-Hour</option>
+                    <option value="12">12-Hour (AM/PM)</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label for="clockSpeed">Update Speed:</label>
+                <select id="clockSpeed" class="select">
+                    <option value="1000">Every second</option>
+                    <option value="100">Every 0.1s</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="clocks-grid">
+            <div class="clock-card" data-timezone="UTC">
+                <div class="clock-header">
+                    <h3>UTC</h3>
+                    <p class="timezone-offset">±0:00</p>
+                </div>
+                <div class="clock-display">
+                    <div class="digital-time">00:00:00</div>
+                </div>
+            </div>
+
+            <div class="clock-card" data-timezone="America/New_York">
+                <div class="clock-header">
+                    <h3>New York</h3>
+                    <p class="timezone-offset">EST/EDT</p>
+                </div>
+                <div class="clock-display">
+                    <div class="digital-time">00:00:00</div>
+                </div>
+            </div>
+
+            <div class="clock-card" data-timezone="Europe/London">
+                <div class="clock-header">
+                    <h3>London</h3>
+                    <p class="timezone-offset">GMT/BST</p>
+                </div>
+                <div class="clock-display">
+                    <div class="digital-time">00:00:00</div>
+                </div>
+            </div>
+
+            <div class="clock-card" data-timezone="Europe/Paris">
+                <div class="clock-header">
+                    <h3>Paris</h3>
+                    <p class="timezone-offset">CET/CEST</p>
+                </div>
+                <div class="clock-display">
+                    <div class="digital-time">00:00:00</div>
+                </div>
+            </div>
+
+            <div class="clock-card" data-timezone="Asia/Tokyo">
+                <div class="clock-header">
+                    <h3>Tokyo</h3>
+                    <p class="timezone-offset">JST</p>
+                </div>
+                <div class="clock-display">
+                    <div class="digital-time">00:00:00</div>
+                </div>
+            </div>
+
+            <div class="clock-card" data-timezone="Asia/Shanghai">
+                <div class="clock-header">
+                    <h3>Shanghai</h3>
+                    <p class="timezone-offset">CST</p>
+                </div>
+                <div class="clock-display">
+                    <div class="digital-time">00:00:00</div>
+                </div>
+            </div>
+
+            <div class="clock-card" data-timezone="Australia/Sydney">
+                <div class="clock-header">
+                    <h3>Sydney</h3>
+                    <p class="timezone-offset">AEDT/AEST</p>
+                </div>
+                <div class="clock-display">
+                    <div class="digital-time">00:00:00</div>
+                </div>
+            </div>
+
+            <div class="clock-card" data-timezone="Asia/Dubai">
+                <div class="clock-header">
+                    <h3>Dubai</h3>
+                    <p class="timezone-offset">GST</p>
+                </div>
+                <div class="clock-display">
+                    <div class="digital-time">00:00:00</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="clock-settings">
+            <button id="addTimezoneBtn" class="btn btn-secondary">➕ Add Custom Timezone</button>
+            <button id="resetBtn" class="btn btn-secondary">🔄 Reset</button>
+        </div>
+
+        <div id="customTimezones" class="custom-timezones">
+            <!-- Custom timezones will be added here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
